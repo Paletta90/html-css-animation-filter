@@ -84,12 +84,12 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    transition: border-radius 2s, filter 2s, width 2s;
+    transition: border-radius 2s, filter 2s, transform 2s;
 }
 .ex-9-img:hover{
     border-radius: 20px;
     filter: grayscale(100%) blur(5px);
-    width: 100px;
+    transform: scale(1,5);
 }
 /* Decimo esercizio */
 .ex-10-icon {
@@ -99,6 +99,11 @@
     animation-iteration-count: infinite;
 }
 @keyframes load{
+    0%{
+        transform: rotate(1turn);
+    }
+}
+/* @keyframes load{
     0%{
         transform: rotate(0deg);
     }
@@ -124,7 +129,7 @@
         transform: rotate(252deg);
     }
     80%{
-        transform: rotate(288eg);
+        transform: rotate(288deg);
     }
     90%{
         transform: rotate(324deg);
@@ -132,14 +137,62 @@
     100%{
         transform: rotate(360deg);
     }
-}
-.ex-10-icon:hover{
-}
+} */
+
 /* Undicesimo esercizio */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+    animation-name: load2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes load2{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(36deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    30%{
+        transform: rotate(108deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    70%{
+        transform: rotate(252deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
+/* @keyframes load2 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
 
+ /* Dodicesimo esercizio */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
