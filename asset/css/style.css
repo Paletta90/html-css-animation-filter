@@ -193,19 +193,20 @@
 } */
 
  /* Dodicesimo esercizio */
-.ex-12-top-white{
-    animation-name: top;
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: top12;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.ex-12-bottom-white{
-    animation-name: bottom;
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom12;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-@keyframes top{
+@keyframes top12{
     0%{
         left: 30%;
     }
@@ -223,10 +224,10 @@
         left: 20%;
     }
     100%{
-        left: 0%;
+        left: -10%;
     }
 }
-@keyframes bottom{
+@keyframes bottom12{
     0%{
         right: 40%;
     }
@@ -248,6 +249,111 @@
     }
 }
  /* Tredicesimo esercizio */
+ .ex-13-top-white{
+    animation-name: top13;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+}
+.ex-13-bottom-white{
+    animation-name: bottom13;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes top13{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    10%{
+        left: 50%;
+        top: -10px;
+    }
+    20%{
+        left: 70%;
+        top: -10px;
+    }
+    30%{
+        left: 98%;
+        top: -10px;
+    }
+    40%{
+        left: 80%;
+        top: 50px;
+    }
+    50%{
+        left: 70%;
+        top: 50px;
+    }
+    60%{
+        left: 30%;
+        top:50px;
+    }
+    70%{
+        left: -10%;
+        top: 50px;
+    }
+    80%{
+        left: -10%;
+        top: 20px;
+    }
+    90%{
+        left: -10%;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+@keyframes bottom13{
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    10%{
+        right: 60%;
+        bottom: -10px;
+    }
+    20%{
+        right: 98%;
+        bottom: -10px;
+    }
+    30%{
+       right: 98%;
+       bottom: 30px;
+    }
+    40%{
+       right: 98%;
+       bottom: 50px;
+    }
+    50%{
+       right: 70%;
+       bottom: 50px;
+    }
+    60%{
+      right: 30%;
+      bottom: 50px;
+    }
+    70%{
+       right: 10%;
+       bottom: 50px;
+    }
+    80%{
+        right: -20%;
+        bottom: 30px;
+    }
+    90%{
+        right: -20%;
+        bottom: 10px;
+    }
+    100%{
+       right: 0%;
+       bottom: -10px;
+    }
+}
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
