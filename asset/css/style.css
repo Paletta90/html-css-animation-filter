@@ -193,6 +193,61 @@
 } */
 
  /* Dodicesimo esercizio */
+.ex-12-top-white{
+    animation-name: top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.ex-12-bottom-white{
+    animation-name: bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes top{
+    0%{
+        left: 30%;
+    }
+
+    20%{
+        left: 50%;
+    }
+    40%{
+        left: 80%;
+    }
+    60%{
+        left: 50%;
+    }
+    80%{
+        left: 20%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes bottom{
+    0%{
+        right: 40%;
+    }
+
+    20%{
+        right: 60%;
+    }
+    40%{
+        right: 80%;
+    }
+    60%{
+        right: 60%;
+    }
+    80%{
+        right: 30%;
+    }
+    100%{
+        right:-10%;
+    }
+}
+ /* Tredicesimo esercizio */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
